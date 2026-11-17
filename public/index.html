@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KORO — Laboratorium Chemii Samochodowej | Kraków, Polska</title>
+    <meta
+      name="description"
+      content="Profesjonalna chemia samochodowa i detailingowa w Polsce. Piany aktywne, powłoki SiO2, deironizery. Szybkie zamówienia i dobór chemii prosto na Telegram."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Przejdź do treści</a>
+
+    <!-- Top Utility Bar -->
+    <div class="utility-bar">
+      <div class="container utility-bar__inner">
+        <div class="utility-bar__meta">
+          <span class="mono-tag">PL // KRAKÓW MAGAZYN</span>
+          <span data-i18n="utility.shipping">Wysyłka 24h InPost &amp; DPD • Darmowa dostawa od 249 zł</span>
+        </div>
+        <div class="utility-bar__right">
+          <div class="lang-switch" role="group" aria-label="Language switcher">
+            <button type="button" class="lang-btn is-active" data-lang="pl" aria-pressed="true">PL</button>
+            <button type="button" class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="#top" class="brand" aria-label="KORO Auto Chemistry">
+          <span class="brand__mark" aria-hidden="true">K</span>
+          <span class="brand__text">
+            <strong>KORO</strong>
+            <small class="mono-tag">CHEMIA LAB // PL</small>
+          </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Główna nawigacja">
+          <a href="#catalog" data-i18n="nav.catalog">Katalog</a>
+          <a href="#formulas" data-i18n="nav.formulas">Standard Lab</a>
+          <a href="#b2b" data-i18n="nav.b2b">Dla Myjni &amp; B2B</a>
+          <a href="#lead-form" class="nav-cta" data-i18n="nav.request">
+            Zostaw zgłoszenie
+            <span class="nav-cta__count" id="nav-cart-count" hidden>0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Editorial Asymmetric Hero -->
+      <section class="hero" id="top">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <div class="hero__eyebrow">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span class="mono-tag" data-i18n="hero.eyebrow">FORMUŁY DETAILINGOWE • PRODUKCJA UE</span>
+            </div>
+
+            <h1 class="hero__title" data-i18n="hero.title">
+              Precyzyjna chemia do lakieru, kół i wnętrza.
+            </h1>
+
+            <p class="hero__subtitle" data-i18n="hero.subtitle">
+              Koncentraty o kontrolowanym pH dla studiów detailingu, myjni bezdotykowych i wymagających kierowców w całej Polsce. Złóż zamówienie lub zapytaj o dobór — zgłoszenie trafia od razu na Telegram właściciela.
+            </p>
+
+            <div class="hero__actions">
+              <a href="#lead-form" class="btn btn--primary" data-i18n="hero.ctaPrimary">
+                Wyślij zgłoszenie w 30 sek.
+              </a>
+              <a href="#catalog" class="btn btn--ghost" data-i18n="hero.ctaSecondary">
+                Przeglądaj formuły ↓
+              </a>
+            </div>
+
+            <dl class="hero__specs">
+              <div class="spec-cell">
+                <dt class="mono-tag" data-i18n="hero.spec1Label">ZAKRES pH</dt>
+                <dd class="mono-val">4.2 — 13.0</dd>
+              </div>
+              <div class="spec-cell">
+                <dt class="mono-tag" data-i18n="hero.spec2Label">ROZCIEŃCZENIE</dt>
+                <dd class="mono-val" data-i18n="hero.spec2Val">do 1:100</dd>
+              </div>
+              <div class="spec-cell">
+                <dt class="mono-tag" data-i18n="hero.spec3Label">ODPOWIEDŹ</dt>
+                <dd class="mono-val" data-i18n="hero.spec3Val">&lt; 15 min (TG)</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero__media">
+            <figure class="hero-frame">
+              <img
+                src="/images/hero-detailing.jpg"
+                alt="Minimalistyczne butelki chemii samochodowej KORO na mokrym bazalcie obok lakieru z kroplami wody"
+                width="1408"
+                height="792"
+                fetchpriority="high"
+              />
+              <figcaption class="hero-frame__caption">
+                <span class="mono-tag">TEST HYDROFOBOWOŚCI // SiO2-04</span>
+                <span class="mono-val">112° kąt zwilżania</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Architectural Strip -->
+      <section class="strip" aria-label="Parametry logistyczne">
+        <div class="container strip__grid">
+          <div class="strip__item">
+            <span class="mono-tag">01</span>
+            <p data-i18n="strip.item1">Karty charakterystyki (MSDS) i faktura VAT 23% do każdego zamówienia B2B</p>
+          </div>
+          <div class="strip__item">
+            <span class="mono-tag">02</span>
+            <p data-i18n="strip.item2">Bezpieczne dla wosków, folii PPF i powłok ceramicznych (formuły bez NTA)</p>
+          </div>
+          <div class="strip__item">
+            <span class="mono-tag">03</span>
+            <p data-i18n="strip.item3">Odbiór osobisty Kraków (ul. Igołomska) lub wysyłka tego samego dnia</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Chemistry Catalog -->
+      <section class="catalog" id="catalog">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="mono-tag" data-i18n="catalog.eyebrow">KATALOG FORMUŁ // 2026</span>
+              <h2 class="section-title" data-i18n="catalog.title">Dobór chemii według etapu pracy</h2>
+            </div>
+
+            <div class="catalog-controls">
+              <div class="segment" role="group" aria-label="Format opakowań">
+                <button
+                  type="button"
+                  class="segment__btn is-active"
+                  data-tier="retail"
+                  aria-pressed="true"
+                  data-i18n="catalog.tierRetail"
+                >
+                  Detailing (0.5–1 L)
+                </button>
+                <button
+                  type="button"
+                  class="segment__btn"
+                  data-tier="b2b"
+                  aria-pressed="false"
+                  data-i18n="catalog.tierB2b"
+                >
+                  B2B / Kanistry (5–20 L)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-bar" role="tablist" aria-label="Kategorie produktów">
+            <button type="button" class="filter-chip is-active" data-category="all" role="tab" aria-selected="true" data-i18n="cat.all">
+              Wszystkie
+            </button>
+            <button type="button" class="filter-chip" data-category="wash" role="tab" aria-selected="false" data-i18n="cat.wash">
+              Piany i Mycie
+            </button>
+            <button type="button" class="filter-chip" data-category="ceramic" role="tab" aria-selected="false" data-i18n="cat.ceramic">
+              Ceramika i Ochrona
+            </button>
+            <button type="button" class="filter-chip" data-category="wheels" role="tab" aria-selected="false" data-i18n="cat.wheels">
+              Koła i Deironizacja
+            </button>
+            <button type="button" class="filter-chip" data-category="interior" role="tab" aria-selected="false" data-i18n="cat.interior">
+              Wnętrze i Skóra
+            </button>
+          </div>
+
+          <div class="product-grid" id="product-grid" aria-live="polite">
+            <!-- Rendered cleanly by app.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Dark Contrast Technical Band -->
+      <section class="lab-band" id="formulas">
+        <div class="container lab-band__grid">
+          <div class="lab-band__intro">
+            <span class="mono-tag accent-text" data-i18n="lab.eyebrow">PROTOKÓŁ KORO // KONTROLA pH</span>
+            <h2 class="section-title section-title--light" data-i18n="lab.title">
+              Nie sprzedajemy przypadkowych mieszanek. Liczy się bilans chemiczny.
+            </h2>
+            <p class="lab-band__copy" data-i18n="lab.copy">
+              W polskich warunkach drogowych (sól zimą, pył z klocków, twarda woda na myjniach) sama piana nie wystarczy. Każdy produkt ma przypisaną skalę pH, rekomendowane rozcieńczenie i czas reakcji na lakierze.
+            </p>
+          </div>
+
+          <div class="lab-band__table-wrap">
+            <table class="protocol-table">
+              <thead>
+                <tr>
+                  <th data-i18n="lab.colStage">Etap</th>
+                  <th data-i18n="lab.colProduct">Preparat</th>
+                  <th>pH</th>
+                  <th data-i18n="lab.colDilution">Rozcieńczenie</th>
+                  <th data-i18n="lab.colDwell">Czas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="mono-tag">01 / PRE-WASH</td>
+                  <td>KR-01 Alkaliczna Piana Zima</td>
+                  <td class="mono-val">11.8</td>
+                  <td class="mono-val">1:10 – 1:25</td>
+                  <td class="mono-val">3–4 min</td>
+                </tr>
+                <tr>
+                  <td class="mono-tag">02 / IRON</td>
+                  <td>KR-03 Krwawa Felga Gel</td>
+                  <td class="mono-val">7.0 (N)</td>
+                  <td class="mono-val">RTU (1:0)</td>
+                  <td class="mono-val">4–6 min</td>
+                </tr>
+                <tr>
+                  <td class="mono-tag">03 / WASH</td>
+                  <td>KR-02 Szampon Kwaśny Reset</td>
+                  <td class="mono-val">4.5</td>
+                  <td class="mono-val">1:150</td>
+                  <td class="mono-val">2–3 min</td>
+                </tr>
+                <tr>
+                  <td class="mono-tag">04 / COAT</td>
+                  <td>KR-04 SiO2 Shield 36M</td>
+                  <td class="mono-val">—</td>
+                  <td class="mono-val">~30 ml / auto</td>
+                  <td class="mono-val">2 min flash</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- B2B & Ready Sets -->
+      <section class="b2b-section" id="b2b">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="mono-tag" data-i18n="b2b.eyebrow">GOTOWE ZESTAWY &amp; B2B</span>
+              <h2 class="section-title" data-i18n="b2b.title">Pakiety startowe z szybką wyceną</h2>
+            </div>
+          </div>
+
+          <div class="kits-grid">
+            <article class="kit-card">
+              <div class="kit-card__top">
+                <span class="mono-tag">PAKIET 01 // DRIVER</span>
+                <span class="mono-val kit-price">189 zł</span>
+              </div>
+              <h3 data-i18n="kit1.title">Zestaw Weekendowy Detailing</h3>
+              <p data-i18n="kit1.desc">
+                Piana neutralna 1 L + Szampon Reset 500 ml + Krwawa Felga 750 ml + Wnętrze Matte 500 ml.
+              </p>
+              <button type="button" class="btn btn--outline kit-select-btn" data-kit="weekend" data-i18n="kit.btn">
+                Dodaj pakiet do zgłoszenia
+              </button>
+            </article>
+
+            <article class="kit-card kit-card--featured">
+              <div class="kit-card__top">
+                <span class="mono-tag">PAKIET 02 // STUDIO</span>
+                <span class="mono-val kit-price">640 zł</span>
+              </div>
+              <h3 data-i18n="kit2.title">Zestaw Studio &amp; Powłoka SiO2</h3>
+              <p data-i18n="kit2.desc">
+                Pełna dekontaminacja lakieru i kół + powłoka ceramiczna SiO2 50 ml + aplikatory zamszowe i kanister 5 L piany.
+              </p>
+              <button type="button" class="btn btn--primary kit-select-btn" data-kit="studio" data-i18n="kit.btn">
+                Dodaj pakiet do zgłoszenia
+              </button>
+            </article>
+
+            <article class="kit-card">
+              <div class="kit-card__top">
+                <span class="mono-tag">PAKIET 03 // MYJNIA B2B</span>
+                <span class="mono-val kit-price">1 490 zł</span>
+              </div>
+              <h3 data-i18n="kit3.title">Pakiet Myjnia Bezdotykowa (4 × 20 L)</h3>
+              <p data-i18n="kit3.desc">
+                Zestaw testowy pod dozowniki myjni: mikroproszek/piana aktywna, wosk hydropolimerowy i chemia do felg. Faktura VAT 23%.
+              </p>
+              <button type="button" class="btn btn--outline kit-select-btn" data-kit="carwash" data-i18n="kit.btn">
+                Dodaj pakiet do zgłoszenia
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Telegram Lead Request Section -->
+      <section class="lead-section" id="lead-form">
+        <div class="container lead-grid">
+          <div class="lead-sidebar">
+            <span class="mono-tag" data-i18n="lead.eyebrow">BEZPOŚREDNIE ZAMÓWIENIE // TELEGRAM</span>
+            <h2 class="section-title" data-i18n="lead.title">Zostaw zgłoszenie właścicielowi</h2>
+            <p class="lead-sidebar__copy" data-i18n="lead.desc">
+              Nie musisz zakładać konta ani płacić z góry. Wybierz produkty albo opisz swój cel, a właściciel sklepu otrzyma Twoje zgłoszenie w Telegramie i oddzwoni z potwierdzeniem wysyłki lub rabatem B2B.
+            </p>
+
+            <!-- Selected Items Summary -->
+            <div class="basket-box" aria-live="polite">
+              <div class="basket-box__head">
+                <span class="mono-tag" data-i18n="basket.title">WYBRANE POZYCJE</span>
+                <button type="button" class="text-link" id="clear-basket-btn" hidden data-i18n="basket.clear">
+                  Wyczyść
+                </button>
+              </div>
+              <div id="basket-items" class="basket-list">
+                <p class="basket-empty" data-i18n="basket.empty">
+                  Brak wybranych produktów — możesz wysłać samo pytanie o dobór chemii.
+                </p>
+              </div>
+              <div class="basket-total" id="basket-total" hidden>
+                <span data-i18n="basket.totalLabel">Szacunkowa wartość</span>
+                <strong class="mono-val" id="basket-total-value">0 zł</strong>
+              </div>
+            </div>
+
+            <!-- Live Telegram Gateway Status -->
+            <div class="tg-status-card" id="tg-status-card">
+              <div class="tg-status-card__row">
+                <span class="tg-pill" id="tg-pill">
+                  <span class="tg-pill__dot" aria-hidden="true"></span>
+                  <span id="tg-pill-text">Sprawdzanie połączenia z Telegramem…</span>
+                </span>
+                <button type="button" class="text-link" id="tg-refresh-btn" data-i18n="tg.refresh">
+                  Odśwież
+                </button>
+              </div>
+              <p class="tg-status-card__hint" id="tg-hint" hidden></p>
+            </div>
+          </div>
+
+          <form class="lead-form" id="order-form" novalidate>
+            <div class="form-row">
+              <div class="segment segment--full" role="group" aria-label="Typ klienta">
+                <button
+                  type="button"
+                  class="segment__btn is-active"
+                  data-customer-type="private"
+                  aria-pressed="true"
+                  data-i18n="form.typePrivate"
+                >
+                  Klient indywidualny
+                </button>
+                <button
+                  type="button"
+                  class="segment__btn"
+                  data-customer-type="b2b"
+                  aria-pressed="false"
+                  data-i18n="form.typeB2b"
+                >
+                  Firma / Studio / Myjnia (VAT)
+                </button>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="field">
+                <label for="input-name" data-i18n="form.nameLabel">Imię lub nazwa firmy *</label>
+                <input
+                  id="input-name"
+                  name="name"
+                  type="text"
+                  required
+                  minlength="2"
+                  autocomplete="name"
+                  placeholder="np. Marek Kowalski"
+                />
+              </div>
+
+              <div class="field">
+                <label for="input-city" data-i18n="form.cityLabel">Miasto / Paczkomat</label>
+                <input
+                  id="input-city"
+                  name="city"
+                  type="text"
+                  autocomplete="address-level2"
+                  placeholder="np. Kraków / Warszawa"
+                />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="field">
+                <label for="input-channel" data-i18n="form.channelLabel">Preferowany kontakt *</label>
+                <select id="input-channel" name="contact_channel">
+                  <option value="phone" data-i18n="form.chPhone">Telefon (+48)</option>
+                  <option value="telegram">Telegram (@username)</option>
+                  <option value="whatsapp">WhatsApp</option>
+                  <option value="email">E-mail</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="input-contact" data-i18n="form.contactLabel">Numer telefonu lub @nick *</label>
+                <input
+                  id="input-contact"
+                  name="contact"
+                  type="tel"
+                  required
+                  minlength="3"
+                  autocomplete="tel"
+                  placeholder="+48 500 600 700"
+                />
+              </div>
+            </div>
+
+            <div class="form-grid-2" id="b2b-row" hidden>
+              <div class="field">
+                <label for="input-nip" data-i18n="form.nipLabel">NIP (do faktury VAT)</label>
+                <input
+                  id="input-nip"
+                  name="nip"
+                  type="text"
+                  inputmode="numeric"
+                  placeholder="np. 6762541890"
+                />
+              </div>
+              <div class="field">
+                <label for="input-object" data-i18n="form.objectLabel">Auto lub typ obiektu</label>
+                <input
+                  id="input-object"
+                  name="car_or_business"
+                  type="text"
+                  placeholder="np. BMW G20 / Myjnia 4-stanowiskowa"
+                />
+              </div>
+            </div>
+
+            <div class="field" id="private-object-field">
+              <label for="input-car" data-i18n="form.carLabel">Model auta lub zadanie (opcjonalnie)</label>
+              <input
+                id="input-car"
+                name="car_private"
+                type="text"
+                placeholder="np. Audi A4 B9, czarny lakier po korekcie"
+              />
+            </div>
+
+            <div class="field">
+              <label for="input-notes" data-i18n="form.notesLabel">Komentarz lub pytania do doboru</label>
+              <textarea
+                id="input-notes"
+                name="notes"
+                rows="3"
+                placeholder="Np. potrzebuję delikatnej piany do folii PPF i szybkiej wysyłki do Wrocławia..."
+              ></textarea>
+            </div>
+
+            <div class="form-footer">
+              <button type="submit" class="btn btn--primary btn--lg" id="submit-btn" data-i18n="form.submit">
+                Wyślij zgłoszenie do Telegrama →
+              </button>
+              <p class="form-legal" data-i18n="form.legal">
+                Dane trafiają bezpośrednio do właściciela sklepu KORO. Zero spamu.
+              </p>
+            </div>
+
+            <div class="form-feedback" id="form-feedback" role="status" aria-live="polite" hidden></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <strong>KORO // Auto Chemistry Lab Polska</strong>
+          <p class="mono-tag">ul. Igołomska 28, 31-983 Kraków • NIP: 676-000-11-22</p>
+        </div>
+        <div class="site-footer__right mono-tag">
+          <span>Pn–Pt 08:30–17:30 CET • kontakt@koro-chem.pl</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Native <dialog> Product Spec Modal -->
+    <dialog class="spec-dialog" id="spec-dialog" aria-labelledby="dialog-title">
+      <div class="spec-dialog__card">
+        <div class="spec-dialog__header">
+          <span class="mono-tag" id="dialog-sku">KR-01</span>
+          <button type="button" class="dialog-close" id="dialog-close-btn" aria-label="Zamknij">✕</button>
+        </div>
+        <div class="spec-dialog__body">
+          <div class="spec-dialog__media">
+            <img id="dialog-img" src="" alt="" width="480" height="360" />
+          </div>
+          <div class="spec-dialog__info">
+            <h3 id="dialog-title"></h3>
+            <p id="dialog-desc" class="spec-dialog__desc"></p>
+            <dl class="dialog-specs">
+              <div>
+                <dt class="mono-tag">pH</dt>
+                <dd class="mono-val" id="dialog-ph"></dd>
+              </div>
+              <div>
+                <dt class="mono-tag" data-i18n="dialog.dilution">Rozcieńczenie</dt>
+                <dd class="mono-val" id="dialog-dilution"></dd>
+              </div>
+              <div>
+                <dt class="mono-tag" data-i18n="dialog.volume">Pojemność</dt>
+                <dd class="mono-val" id="dialog-volume"></dd>
+              </div>
+              <div>
+                <dt class="mono-tag" data-i18n="dialog.price">Cena</dt>
+                <dd class="mono-val" id="dialog-price"></dd>
+              </div>
+            </dl>
+            <div class="dialog-protocol">
+              <strong class="mono-tag" data-i18n="dialog.protocol">PROTOKÓŁ UŻYCIA</strong>
+              <p id="dialog-protocol"></p>
+            </div>
+            <div class="spec-dialog__actions">
+              <button type="button" class="btn btn--primary" id="dialog-add-btn" data-i18n="dialog.add">
+                Dodaj do zgłoszenia
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
